@@ -8,17 +8,227 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Deepika Velapure</title>
     <link rel="stylesheet" href="../style/styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
   </head>
   <body>
-    <nav>
-      Hello
-      <!-- <ul class="list-item">
-        <li><a class = "nav-link" href="01-hello.html">Exercise 01</a></li>
-        <li><a class = "nav-link" href="02-card.html">Exercise 02</a></li>
-        <li><a class = "nav-link" href="03-navbar.html">Exercise 03</a></li>
-        <li><a class = "nav-link" href="04-table.html">Exercise 04</a></li>
-        <li><a class = "nav-link" href="05-form.html">Exercise 05</a></li>
-      </ul> -->
-    </nav>
+    <div class="start-div">
+      <nav class="nav-class">
+        <ul class="list-item">
+          <li class="nav-name"><a class="nav-alink" href="#about">Deepika Velapure</a></li>
+          <li class="nav-other"><a class="nav-alink" href="#about">About</a></li>
+          <li class="nav-other"><a class="nav-alink" href="#resume">Resume</a></li>
+          <li class="nav-other"><a class="nav-alink" href="#projects">Projects</a></li>
+          <li class="nav-other"><a class="nav-alink" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="about-div" id="about">
+      <p class="about-p">
+        <span class="span-hello">Hello, I am Deepika Velapure (she/her) </span> <br />
+        I am a Post-Baccalaureate student in the Computer Science department. Previously I worked as a Java Developer for 8 years
+        at Cognizant Technology Solutions, India. During my work experience, I got a lot of opportunities to work on several
+        backend and UI-based projects. I also got the opportunity to work on Glassfish server upgrades and several test automation
+        tools like Katalon and JGiven. <br />
+        However, being a student from an Electronics background, I did not get much chance to explore the software technologies in
+        depth. Therefore, I decided to pursue Master's in Computer Science at Portland State University. I plan to take up the
+        AI/ML track and learn more about the latest technology used in that domain. Going forward, I want to explore and build
+        projects based on ML.
+      </p>
+      <img class="about-image" src="/images/My-pic.jpg" alt="photo of Deepika at Hoogly river" width="250px" height="230px" />
+    </div>
+    <div class="resume-div" id="resume">
+      <div class="resume-first-section">
+        <div class="edu-image">
+          <img src="/images/education-image.PNG" alt="Image with text 'Education'" width="150px" height="150px" />
+        </div>
+        <div class="work-image">
+          <img src="/images/work-experience-image.PNG" alt="Image with text 'Work Experience'" width="150px" height="150px" />
+        </div>
+        <div class="cert-image">
+          <img src="/images/certificate-image.PNG" alt="Image with text 'Certificates'" width="150px" height="150px" />
+        </div>
+      </div>
+      <div class="list-group resume-content">
+        <div class="list-group-item-action">
+          <div class="resume-entry">
+            <h3>Education</h3>
+            Post-Baccalaureate Student at Portland State University
+            <h6>Major: Computer Science</h6>
+            <h6>Courses Completed:</h6>
+            <ul>
+              <li>Discrete Structures I</li>
+              <li>Discrete Structures II</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="list-group-item-action">
+          <div class="resume-entry">
+            <h3>Work Experience</h3>
+            Cognizant Technology Solutions Pvt. Ltd.
+            <ul>
+              <li>
+                Senior Associate, Pune, India (August 2019 – November 2021)
+                <ul>
+                  <li>
+                    Worked on DevOps based project which involved requirement gathering, analysis, development and
+                    deployment.Developed Spring Boot based microservices which processed the business logic for ReactJS based UI
+                    application.Upgraded Glassfish Server and used Katalon tool for developing regression test suites for the
+                    application
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Senior JAVA Developer, Munich, Germany (December 2017 – July 2019)
+                <ul>
+                  <li>
+                    Analyzed business requirements and designed optimistic solutions for the project from transition to steady
+                    state phase. Analyzed and developed user stories which involved communicating with external systems using REST
+                    and SOAP Webservices, Kafka and RMI calls.Utilized JGiven Framework for testing the application based on BDD
+                    approach. Built and deployed the application on the WebLogic server
+                  </li>
+                </ul>
+              </li>
+              <li>
+                JAVA Developer, Pune, India (February 2014 – November 2017)
+                <ul>
+                  <li>
+                    Applied Core Java concepts for implementing the requirements from the client. Utilized Enterprise Architect
+                    Professional Edition tool for creating design and test data for all the requirements. Involved in requirement
+                    gathering and created prototype screens in RCP with analysis and estimation
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <div class="list-group-item-action">
+          <div class="resume-entry">
+            <h3>Course Certificates</h3>
+            <ul>
+              <li>Oracle Certified Associate Programmer 1 (1Z0-803) (October 2015)</li>
+              <li>Internet of Things (IoT) training (March 2019)</li>
+              <li>German Language Certification (A1) (March 2019)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects-div" id="projects">
+      <h3 class="projects-h3">Projects</h3>
+      <div class="container">
+        <div class="bootstrap-grid">
+          <div class="row">
+            <div class="col">
+              <img
+                class="project-image"
+                src="/images/MNIST_Data.png"
+                alt="Image of the MNIST handwritten dataset used in Machine Learning"
+                width="300px"
+                height="200px"
+              />
+              <h4>
+                <span class="project-span">Handwritten digit recognition using MNIST dataset</span>
+              </h4>
+              <div class="project-description" id="project-id1">
+                <p>
+                  The project was implemented using a two-layer neural network consisting of one hidden-layer with a test accuracy
+                  of 94%. The input to this network was the MNIST Dataset containing gray scale values of hand-written digits. The
+                  output of this network identifies the class or the digit that the input pixels represent.
+                </p>
+                <p>
+                  <a href="https://github.com/deepika-pdx/Machine_Learning">Click here</a> to view the project details on GitHub!
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <img
+                class="project-image"
+                src="/images/Spambase_Dataset.png"
+                alt="Image of the Spambase dataset used in Machine Learning"
+                width="300px"
+                height="200px"
+              />
+              <h4>
+                <span class="project-span">Spambase data classification using Gaussian Naïve Bayes classifier</span>
+              </h4>
+              <div class="project-description" id="project-id2">
+                <p>
+                  The Naive Bayes Classifier was used to classify the spambase dataset available at
+                  <a href="https://archive.ics.uci.edu/ml/datasets/spambase">https://archive.ics.uci.edu/ml/datasets/spambase</a>
+                  into spam or not spam with a test accuracy of 81%.
+                </p>
+                <p>
+                  <a href="https://github.com/deepika-pdx/Machine_Learning">Click here</a> to view the project details on GitHub!
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <img
+                class="project-image"
+                src="/images/Diabetes_prediction.jpg"
+                alt="Image of the Diabetes Prediction kaggle dataset used in Machine Learning"
+                width="300px"
+                height="200px"
+              />
+              <h4>
+                <span class="project-span"> Diabetes prediction model using Multilayer Perceptron</span>
+              </h4>
+              <div class="project-description" id="project-id3">
+                <p>
+                  Diabetes prediction model was implemented using Multilayer Perceptron (MLP) and Gaussian Naïve Bayes classifier.
+                  The dataset available at
+                  <a href="https://www.kaggle.com/datasets/houcembenmansour/predict-diabetes-based-on-diagnostic-measures"
+                    >https://www.kaggle.com/datasets/houcembenmansour/predict-diabetes-based-on-diagnostic-measures</a
+                  >
+                  was used for training and testing the model. The model implemented using MLP has a test accuracy of 87%, while
+                  the performance of the model implemented using Gaussian Naïve Bayes classifier was improved after removing the
+                  redundant features to a test accuracy of 91%.
+                </p>
+                <p>
+                  <a href="https://github.com/deepika-pdx/ML-Final-Project">Click here</a> to view the project details on GitHub!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact-div" id="contact">
+      <div class="container">
+        <div class="form-container">
+          <form class="my-4 mx-auto p-3" style="width: 600px">
+            <h3>Contact Me:</h3>
+            <div class="row mb-2 mt-4">
+              <label for="name" class="col-md-4 col-lg-4 col-form-label">Name:</label>
+              <div class="col-md-8 col-lg-8">
+                <input type="text" class="form-control" id="name" />
+              </div>
+            </div>
+            <div class="row mb-2 mt-2">
+              <label for="email" class="col-md-4 col-lg-4 col-form-label">Email:</label>
+              <div class="col-md-8 col-lg-8">
+                <input type="email" class="form-control" id="email" />
+              </div>
+            </div>
+            <fieldset>
+              <label for="message" class="col-md-4 col-lg-4 col-form-label">Message:</label>
+              <div class="form-floating">
+                <textarea class="form-control" placeholder="Add your message here" id="message"></textarea>
+              </div>
+            </fieldset>
+            <div class="row mt-4 gx-2">
+              <div class="col">
+                <input type="submit" class="btn btn-primary w-100" value="Submit" />
+              </div>
+              <div class="col">
+                <input type="reset" class="btn btn-secondary w-100" value="Reset" />
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
