@@ -9,10 +9,11 @@
     <title>Deepika Velapure</title>
     <link rel="stylesheet" href="../style/styles.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" />
+    <script defer src="../javascript/website-javascript.js"></script>
   </head>
   <body>
     <div class="start-div">
-      <nav class="nav-class">
+      <nav>
         <ul class="list-item">
           <li class="nav-name"><a class="nav-alink" href="#about">Deepika Velapure</a></li>
           <li class="nav-other"><a class="nav-alink" href="#about">About</a></li>
@@ -23,81 +24,91 @@
       </nav>
     </div>
     <div class="about-div" id="about">
+      <img class="about-image" src="/images/My-pic.jpg" alt="photo of Deepika at Hoogly river" width="250px" height="230px" />
       <p class="about-p">
         <span class="span-hello">Hello, I am Deepika Velapure (she/her) </span> <br />
-        I am a Post-Baccalaureate student in the Computer Science department. Previously I worked as a Java Developer for 8 years
-        at Cognizant Technology Solutions, India. During my work experience, I got a lot of opportunities to work on several
-        backend and UI-based projects. I also got the opportunity to work on Glassfish server upgrades and several test automation
-        tools like Katalon and JGiven. <br />
-        However, being a student from an Electronics background, I did not get much chance to explore the software technologies in
-        depth. Therefore, I decided to pursue Master's in Computer Science at Portland State University. I plan to take up the
-        AI/ML track and learn more about the latest technology used in that domain. Going forward, I want to explore and build
-        projects based on ML.
+        I am a Post-Baccalaureate student in the Computer Science department.
+        <span class="detail-info">
+          Previously I worked as a Java Developer for 8 years at Cognizant Technology Solutions, India. During my work experience,
+          I got a lot of opportunities to work on several backend and UI-based projects. I also got the opportunity to work on
+          Glassfish server upgrades and several test automation tools like Katalon and JGiven. <br />
+          However, being a student from an Electronics background, I did not get much chance to explore the software technologies
+          in depth. Therefore, I decided to pursue Master's in Computer Science at Portland State University. I plan to take up
+          the AI/ML track and learn more about the latest technology used in that domain. Going forward, I want to explore and
+          build projects based on ML.
+        </span>
       </p>
-      <img class="about-image" src="/images/My-pic.jpg" alt="photo of Deepika at Hoogly river" width="250px" height="230px" />
     </div>
     <div class="resume-div" id="resume">
       <div class="resume-first-section">
         <div class="edu-image">
-          <img src="/images/education-image.PNG" alt="Image with text 'Education'" width="150px" height="150px" />
+          <img src="/images/education-image.PNG" alt="Image with text 'Education'" width="200px" height="150px" />
         </div>
         <div class="work-image">
-          <img src="/images/work-experience-image.PNG" alt="Image with text 'Work Experience'" width="150px" height="150px" />
+          <img src="/images/work-experience-image.PNG" alt="Image with text 'Work Experience'" width="200px" height="150px" />
         </div>
         <div class="cert-image">
-          <img src="/images/certificate-image.PNG" alt="Image with text 'Certificates'" width="150px" height="150px" />
+          <img src="/images/certificate-image.PNG" alt="Image with text 'Certificates'" width="200px" height="150px" />
         </div>
       </div>
       <div class="list-group resume-content">
         <div class="list-group-item-action">
           <div class="resume-entry">
-            <h3>Education</h3>
+            <h3 class="content-heading">Education</h3>
             Post-Baccalaureate Student at Portland State University
-            <h6>Major: Computer Science</h6>
-            <h6>Courses Completed:</h6>
-            <ul>
-              <li>Discrete Structures I</li>
-              <li>Discrete Structures II</li>
-            </ul>
+            <span class="detail-info">
+              <h6>Major: Computer Science</h6>
+              <h6>Courses Completed:</h6>
+              <ul>
+                <li>Discrete Structures I</li>
+                <li>Discrete Structures II</li>
+              </ul>
+            </span>
           </div>
         </div>
         <hr />
         <div class="list-group-item-action">
           <div class="resume-entry">
-            <h3>Work Experience</h3>
+            <h3 class="content-heading">Work Experience</h3>
             Cognizant Technology Solutions Pvt. Ltd.
             <ul>
               <li>
                 Senior Associate, Pune, India (August 2019 – November 2021)
-                <ul>
-                  <li>
-                    Worked on DevOps based project which involved requirement gathering, analysis, development and
-                    deployment.Developed Spring Boot based microservices which processed the business logic for ReactJS based UI
-                    application.Upgraded Glassfish Server and used Katalon tool for developing regression test suites for the
-                    application
-                  </li>
-                </ul>
+                <span class="detail-info">
+                  <ul>
+                    <li>
+                      Worked on DevOps based project which involved requirement gathering, analysis, development and
+                      deployment.Developed Spring Boot based microservices which processed the business logic for ReactJS based UI
+                      application.Upgraded Glassfish Server and used Katalon tool for developing regression test suites for the
+                      application
+                    </li>
+                  </ul>
+                </span>
               </li>
               <li>
                 Senior JAVA Developer, Munich, Germany (December 2017 – July 2019)
-                <ul>
-                  <li>
-                    Analyzed business requirements and designed optimistic solutions for the project from transition to steady
-                    state phase. Analyzed and developed user stories which involved communicating with external systems using REST
-                    and SOAP Webservices, Kafka and RMI calls.Utilized JGiven Framework for testing the application based on BDD
-                    approach. Built and deployed the application on the WebLogic server
-                  </li>
-                </ul>
+                <span class="detail-info">
+                  <ul>
+                    <li>
+                      Analyzed business requirements and designed optimistic solutions for the project from transition to steady
+                      state phase. Analyzed and developed user stories which involved communicating with external systems using
+                      REST and SOAP Webservices, Kafka and RMI calls.Utilized JGiven Framework for testing the application based
+                      on BDD approach. Built and deployed the application on the WebLogic server
+                    </li>
+                  </ul>
+                </span>
               </li>
               <li>
                 JAVA Developer, Pune, India (February 2014 – November 2017)
-                <ul>
-                  <li>
-                    Applied Core Java concepts for implementing the requirements from the client. Utilized Enterprise Architect
-                    Professional Edition tool for creating design and test data for all the requirements. Involved in requirement
-                    gathering and created prototype screens in RCP with analysis and estimation
-                  </li>
-                </ul>
+                <span class="detail-info">
+                  <ul>
+                    <li>
+                      Applied Core Java concepts for implementing the requirements from the client. Utilized Enterprise Architect
+                      Professional Edition tool for creating design and test data for all the requirements. Involved in
+                      requirement gathering and created prototype screens in RCP with analysis and estimation
+                    </li>
+                  </ul>
+                </span>
               </li>
             </ul>
           </div>
@@ -105,7 +116,7 @@
         <hr />
         <div class="list-group-item-action">
           <div class="resume-entry">
-            <h3>Course Certificates</h3>
+            <h3 class="content-heading">Course Certificates</h3>
             <ul>
               <li>Oracle Certified Associate Programmer 1 (1Z0-803) (October 2015)</li>
               <li>Internet of Things (IoT) training (March 2019)</li>
@@ -120,7 +131,7 @@
       <div class="container">
         <div class="bootstrap-grid">
           <div class="row">
-            <div class="col">
+            <div class="col-sm-4 col-md-8 col-lg-8">
               <img
                 class="project-image"
                 src="/images/MNIST_Data.png"
@@ -129,7 +140,7 @@
                 height="200px"
               />
               <h4>
-                <span class="project-span">Handwritten digit recognition using MNIST dataset</span>
+                <span class="project-span" onclick="displayDesc1()">Handwritten digit recognition using MNIST dataset</span>
               </h4>
               <div class="project-description" id="project-id1">
                 <p>
@@ -142,7 +153,7 @@
                 </p>
               </div>
             </div>
-            <div class="col">
+            <div class="col-sm-4 col-md-8 col-lg-8">
               <img
                 class="project-image"
                 src="/images/Spambase_Dataset.png"
@@ -151,7 +162,9 @@
                 height="200px"
               />
               <h4>
-                <span class="project-span">Spambase data classification using Gaussian Naïve Bayes classifier</span>
+                <span class="project-span" onclick="displayDesc2()"
+                  >Spambase data classification using Gaussian Naïve Bayes classifier</span
+                >
               </h4>
               <div class="project-description" id="project-id2">
                 <p>
@@ -164,7 +177,7 @@
                 </p>
               </div>
             </div>
-            <div class="col">
+            <div class="col-sm-4 col-md-8 col-lg-8">
               <img
                 class="project-image"
                 src="/images/Diabetes_prediction.jpg"
@@ -173,7 +186,7 @@
                 height="200px"
               />
               <h4>
-                <span class="project-span"> Diabetes prediction model using Multilayer Perceptron</span>
+                <span class="project-span" onclick="displayDesc3()"> Diabetes prediction model using Multilayer Perceptron</span>
               </h4>
               <div class="project-description" id="project-id3">
                 <p>
@@ -196,33 +209,33 @@
       </div>
     </div>
     <div class="contact-div" id="contact">
-      <div class="container">
+      <div class="container-fluid">
         <div class="form-container">
           <form class="my-4 mx-auto p-3" style="width: 600px">
             <h3>Contact Me:</h3>
             <div class="row mb-2 mt-4">
-              <label for="name" class="col-md-4 col-lg-4 col-form-label">Name:</label>
-              <div class="col-md-8 col-lg-8">
-                <input type="text" class="form-control" id="name" />
+              <label for="name" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Name:</label>
+              <div class="col-sm-2 col-md-8 col-lg-8">
+                <input type="text" class="form-control" id="name" required="required" />
               </div>
             </div>
             <div class="row mb-2 mt-2">
-              <label for="email" class="col-md-4 col-lg-4 col-form-label">Email:</label>
-              <div class="col-md-8 col-lg-8">
-                <input type="email" class="form-control" id="email" />
+              <label for="email" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Email:</label>
+              <div class="col-sm-2 col-md-8 col-lg-8">
+                <input type="email" class="form-control" id="email" required="required" />
               </div>
             </div>
             <fieldset>
-              <label for="message" class="col-md-4 col-lg-4 col-form-label">Message:</label>
+              <label for="message" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Message:</label>
               <div class="form-floating">
-                <textarea class="form-control" placeholder="Add your message here" id="message"></textarea>
+                <textarea class="form-control" placeholder="Add your message here" id="message" required="required"></textarea>
               </div>
             </fieldset>
             <div class="row mt-4 gx-2">
-              <div class="col">
+              <div class="col-sm-1">
                 <input type="submit" class="btn btn-primary w-100" value="Submit" />
               </div>
-              <div class="col">
+              <div class="col-sm-1">
                 <input type="reset" class="btn btn-secondary w-100" value="Reset" />
               </div>
             </div>

@@ -1,7 +1,8 @@
 /** @format */
 
 .start-div {
-  display: block;
+  display: flex;
+  flex-direction: column;
   background-image: url("../images/workspace-table-2.jpg");
   height: 50em;
   width: 100%;
@@ -27,7 +28,6 @@
   color: maroon;
   font-weight: bolder;
   font-style: oblique;
-  text-decoration: none;
 }
 
 .about-div {
@@ -40,6 +40,7 @@
 .about-p {
   width: 70em;
   height: 100px;
+  margin-left: 3em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
@@ -49,8 +50,8 @@
 }
 
 .about-image {
-  margin-left: 5em;
-  margin-top: 2em;
+  margin-left: 1em;
+  margin-top: 1.5em;
   border-radius: 2em;
 }
 
@@ -60,7 +61,8 @@
 }
 
 .resume-content {
-  margin-left: 2em;
+  margin-top: 1em;
+  margin-left: 5em;
   margin-right: 7em;
 }
 
@@ -108,9 +110,11 @@
 
 .projects-div {
   background-color: mistyrose;
+  padding-bottom: 1em;
 }
 
 .projects-h3 {
+  padding: 1em;
   text-align: center;
   margin-bottom: 2em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
@@ -137,4 +141,78 @@
 
 .submit-btn-class {
   background-color: mistyrose;
+}
+
+@media (min-width: 414px) and (max-width: 786px) {
+  .start-div {
+    height: 10em;
+  }
+
+  .nav-other {
+    font-size: small;
+    padding: 0.3em;
+  }
+
+  .nav-name {
+    font-size: small;
+    padding: 1em;
+    margin-left: -2em;
+  }
+
+  .about-div {
+    height: 10em;
+  }
+
+  .about-p {
+    width: 30em;
+    height: 200px;
+    margin-left: 1em;
+    font-size: small;
+  }
+
+  .detail-info,
+  .edu-image,
+  .work-image,
+  .cert-image {
+    display: none;
+  }
+
+  .about-image {
+    margin-left: 1em;
+    margin-top: 1em;
+    border-radius: 2em;
+    width: 100px;
+    height: 120px;
+  }
+
+  .resume-content {
+    font-size: small;
+  }
+
+  .content-heading,
+  .projects-h3,
+  .project-span {
+    font-size: medium;
+    font-weight: bold;
+  }
+
+  .resume-entry {
+    margin-bottom: 1em;
+  }
+
+  .project-image {
+    height: 120px;
+    width: 180px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-right: 20px;
+  }
+
+  .row {
+    justify-content: center;
+  }
+
+  .container-fluid {
+    overflow: auto;
+  }
 }
