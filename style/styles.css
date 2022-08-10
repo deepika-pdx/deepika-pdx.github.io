@@ -69,6 +69,7 @@
 
 .resume-entry {
   color: black;
+  margin-left: 3em;
 }
 
 .resume-entry:hover {
@@ -215,6 +216,7 @@ input[type="reset"] {
     margin-bottom: 1em;
     padding: 1em;
     font-size: small;
+    margin-left: -0.5em;
   }
 
   .project-image {
@@ -307,6 +309,7 @@ input[type="reset"] {
 
   .resume-entry {
     padding: 1em;
+    margin-left: 6em;
   }
 }
 
