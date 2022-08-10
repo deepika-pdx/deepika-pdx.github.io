@@ -17,6 +17,11 @@
   font-size: large;
 }
 
+.nav-menu {
+  float: right;
+  padding: 0.5em;
+}
+
 .nav-other {
   display: inline-block;
   flex-direction: row-reverse;
@@ -43,6 +48,7 @@
   height: 100px;
   margin-left: 3em;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  padding: 1em;
 }
 
 .span-hello {
@@ -61,12 +67,6 @@
   background-color: white;
 }
 
-.resume-content {
-  margin-top: 1em;
-  margin-left: 5em;
-  margin-right: 7em;
-}
-
 .resume-entry {
   color: black;
 }
@@ -83,29 +83,20 @@
   border-radius: 2em;
 }
 
-.resume-first-section {
-  display: flex;
-  flex-direction: column;
-}
-
 .edu-image {
   align-items: center;
-  border-radius: 3em;
   margin-left: 2em;
-  margin-top: 0.5em;
+  margin-top: 1em;
 }
 
 .work-image {
   align-items: center;
-  border-radius: 4em;
-  margin-top: 9em;
+  margin-top: 7em;
   margin-left: 2em;
 }
 
 .cert-image {
   align-items: center;
-  border-radius: 3em;
-  margin-top: 8em;
   margin-left: 2em;
 }
 
@@ -144,8 +135,22 @@
   width: 600px;
 }
 
-.submit-btn-class {
+input[type="submit"] {
+  color: black;
   background-color: mistyrose;
+  border-color: darksalmon;
+}
+
+input[type="submit"]:hover {
+  color: black;
+  background-color: darksalmon;
+  border-color: darksalmon;
+}
+
+input[type="reset"] {
+  color: black;
+  background-color: lightgray;
+  border-color: dimgray;
 }
 
 @media (min-width: 414px) and (max-width: 767px) {
@@ -173,6 +178,7 @@
     height: 200px;
     margin-left: 1em;
     font-size: small;
+    padding: 1em;
   }
 
   .detail-info,
@@ -190,36 +196,36 @@
     height: 120px;
   }
 
-  .resume-content {
-    font-size: small;
+  .projects-h3,
+  .project-span,
+  .project-h4 {
+    font-size: medium;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2em;
   }
 
   .content-heading,
-  .projects-h3,
-  .project-span {
+  .contact-h3 {
     font-size: medium;
     font-weight: bold;
   }
 
   .resume-entry {
     margin-bottom: 1em;
+    padding: 1em;
+    font-size: small;
   }
 
   .project-image {
     height: 120px;
-    width: 220px;
-    margin-bottom: 1em;
-    margin-top: 1em;
-    padding-right: 20px;
-    margin-left: 6em;
+    width: 250px;
+    margin-left: 4em;
+    margin-right: 2em;
   }
 
   .row {
     justify-content: center;
-  }
-
-  .container-fluid {
-    overflow: auto;
   }
 
   .form-class {
@@ -256,7 +262,7 @@
   }
 
   .about-div {
-    height: 25em;
+    height: 30em;
   }
 
   .about-p {
@@ -264,12 +270,22 @@
     height: 210px;
     margin-left: 1em;
     font-size: medium;
+    padding: 1em;
   }
 
-  .edu-image,
-  .work-image,
+  .edu-image {
+    width: 120px;
+    height: 120px;
+  }
+
+  .work-image {
+    width: 120px;
+    height: 120px;
+  }
+
   .cert-image {
-    display: none;
+    width: 120px;
+    height: 120px;
   }
 
   .about-image {
@@ -283,6 +299,57 @@
   .project-image {
     height: 120px;
     width: 220px;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    padding-right: 20px;
+    margin-left: -0.5em;
+  }
+
+  .resume-entry {
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1024px) {
+  .start-div {
+    height: 30em;
+  }
+
+  .nav-other {
+    font-size: large;
+    padding: 0.3em;
+  }
+
+  .nav-name {
+    font-size: large;
+    padding: 1em;
+    margin-left: -2em;
+    margin-right: 17em;
+  }
+
+  .about-div {
+    height: 25em;
+  }
+
+  .about-p {
+    padding: 1em;
+  }
+
+  .resume-entry {
+    padding: 1em;
+  }
+
+  .about-image {
+    margin-left: 1em;
+    margin-top: 4em;
+    border-radius: 2em;
+    width: 250px;
+    height: 250px;
+  }
+
+  .project-image {
+    height: 120px;
+    width: 250px;
     margin-bottom: 1em;
     margin-top: 1em;
     padding-right: 20px;

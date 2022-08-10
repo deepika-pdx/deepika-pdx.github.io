@@ -16,10 +16,12 @@
       <nav>
         <ul class="list-item">
           <li class="nav-name"><a class="nav-alink" href="#about">Deepika Velapure</a></li>
-          <li class="nav-other me-auto mb-2 mb-lg-0"><a class="nav-alink" href="#about">About</a></li>
-          <li class="nav-other me-auto mb-2 mb-lg-0"><a class="nav-alink" href="#resume">Resume</a></li>
-          <li class="nav-other me-auto mb-2 mb-lg-0"><a class="nav-alink" href="#projects">Projects</a></li>
-          <li class="nav-other me-auto mb-2 mb-lg-0"><a class="nav-alink" href="#contact">Contact</a></li>
+          <div class="nav-menu">
+            <li class="nav-other ml-auto"><a class="nav-alink" href="#about">About</a></li>
+            <li class="nav-other ml-auto"><a class="nav-alink" href="#resume">Resume</a></li>
+            <li class="nav-other ml-auto"><a class="nav-alink" href="#projects">Projects</a></li>
+            <li class="nav-other ml-auto"><a class="nav-alink" href="#contact">Contact</a></li>
+          </div>
         </ul>
       </nav>
     </div>
@@ -32,6 +34,7 @@
           Previously I worked as a Java Developer for 8 years at Cognizant Technology Solutions, India. During my work experience,
           I got a lot of opportunities to work on several backend and UI-based projects. I also got the opportunity to work on
           Glassfish server upgrades and several test automation tools like Katalon and JGiven. <br />
+          <br />
           However, being a student from an Electronics background, I did not get much chance to explore the software technologies
           in depth. Therefore, I decided to pursue Master's in Computer Science at Portland State University. I plan to take up
           the AI/ML track and learn more about the latest technology used in that domain. Going forward, I want to explore and
@@ -40,89 +43,115 @@
       </p>
     </div>
     <div class="resume-div" id="resume">
-      <div class="resume-first-section">
-        <div class="edu-image">
-          <img src="/images/education-image.PNG" alt="Image with text 'Education'" width="200px" height="150px" />
-        </div>
-        <div class="work-image">
-          <img src="/images/work-experience-image.PNG" alt="Image with text 'Work Experience'" width="200px" height="150px" />
-        </div>
-        <div class="cert-image">
-          <img src="/images/certificate-image.PNG" alt="Image with text 'Certificates'" width="200px" height="150px" />
-        </div>
-      </div>
-      <div class="list-group resume-content">
-        <div class="list-group-item-action">
-          <div class="resume-entry">
-            <h3 class="content-heading">Education</h3>
-            Post-Baccalaureate Student at Portland State University
-            <span class="detail-info">
-              <h6>Major: Computer Science</h6>
-              <h6>Courses Completed:</h6>
-              <ul>
-                <li>Discrete Structures I</li>
-                <li>Discrete Structures II</li>
-              </ul>
-            </span>
-          </div>
-        </div>
-        <hr />
-        <div class="list-group-item-action">
-          <div class="resume-entry">
-            <h3 class="content-heading">Work Experience</h3>
-            Cognizant Technology Solutions Pvt. Ltd.
-            <ul>
-              <li>
-                Senior Associate, Pune, India (August 2019 – November 2021)
+      <div class="container-fluid">
+        <div class="bootstrap-grid">
+          <hr />
+          <div class="row">
+            <div class="col-3">
+              <img
+                class="edu-image"
+                src="/images/education-image.PNG"
+                alt="Image with text 'Education'"
+                width="180px"
+                height="150px"
+              />
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="resume-entry">
+                <h3 class="content-heading">Education</h3>
+                Post-Baccalaureate Student at Portland State University
                 <span class="detail-info">
+                  <h6>Major: Computer Science</h6>
+                  <h6>Courses Completed:</h6>
                   <ul>
-                    <li>
-                      Worked on DevOps based project which involved requirement gathering, analysis, development and
-                      deployment.Developed Spring Boot based microservices which processed the business logic for ReactJS based UI
-                      application.Upgraded Glassfish Server and used Katalon tool for developing regression test suites for the
-                      application
-                    </li>
+                    <li>Discrete Structures I</li>
+                    <li>Discrete Structures II</li>
                   </ul>
                 </span>
-              </li>
-              <li>
-                Senior JAVA Developer, Munich, Germany (December 2017 – July 2019)
-                <span class="detail-info">
-                  <ul>
-                    <li>
-                      Analyzed business requirements and designed optimistic solutions for the project from transition to steady
-                      state phase. Analyzed and developed user stories which involved communicating with external systems using
-                      REST and SOAP Webservices, Kafka and RMI calls.Utilized JGiven Framework for testing the application based
-                      on BDD approach. Built and deployed the application on the WebLogic server
-                    </li>
-                  </ul>
-                </span>
-              </li>
-              <li>
-                JAVA Developer, Pune, India (February 2014 – November 2017)
-                <span class="detail-info">
-                  <ul>
-                    <li>
-                      Applied Core Java concepts for implementing the requirements from the client. Utilized Enterprise Architect
-                      Professional Edition tool for creating design and test data for all the requirements. Involved in
-                      requirement gathering and created prototype screens in RCP with analysis and estimation
-                    </li>
-                  </ul>
-                </span>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
-        </div>
-        <hr />
-        <div class="list-group-item-action">
-          <div class="resume-entry">
-            <h3 class="content-heading">Course Certificates</h3>
-            <ul>
-              <li>Oracle Certified Associate Programmer 1 (1Z0-803) (October 2015)</li>
-              <li>Internet of Things (IoT) training (March 2019)</li>
-              <li>German Language Certification (A1) (March 2019)</li>
-            </ul>
+          <hr />
+          <div class="row">
+            <div class="col-3">
+              <img
+                class="work-image"
+                src="/images/work-experience-image.PNG"
+                alt="Image with text 'Work Experience'"
+                width="180px"
+                height="150px"
+              />
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="resume-entry">
+                <h3 class="content-heading">Work Experience</h3>
+                Cognizant Technology Solutions Pvt. Ltd.
+                <ul>
+                  <li>
+                    Senior Associate, Pune, India (August 2019 – November 2021)
+                    <span class="detail-info">
+                      <ul>
+                        <li>
+                          Worked on DevOps based project which involved requirement gathering, analysis, development and
+                          deployment.Developed Spring Boot based microservices which processed the business logic for ReactJS
+                          based UI application.Upgraded Glassfish Server and used Katalon tool for developing regression test
+                          suites for the application
+                        </li>
+                      </ul>
+                    </span>
+                  </li>
+                  <li>
+                    Senior JAVA Developer, Munich, Germany (December 2017 – July 2019)
+                    <span class="detail-info">
+                      <ul>
+                        <li>
+                          Analyzed business requirements and designed optimistic solutions for the project from transition to
+                          steady state phase. Analyzed and developed user stories which involved communicating with external
+                          systems using REST and SOAP Webservices, Kafka and RMI calls.Utilized JGiven Framework for testing the
+                          application based on BDD approach. Built and deployed the application on the WebLogic server
+                        </li>
+                      </ul>
+                    </span>
+                  </li>
+                  <li>
+                    JAVA Developer, Pune, India (February 2014 – November 2017)
+                    <span class="detail-info">
+                      <ul>
+                        <li>
+                          Applied Core Java concepts for implementing the requirements from the client. Utilized Enterprise
+                          Architect Professional Edition tool for creating design and test data for all the requirements. Involved
+                          in requirement gathering and created prototype screens in RCP with analysis and estimation
+                        </li>
+                      </ul>
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
+          <hr />
+          <div class="row">
+            <div class="col-3">
+              <img
+                class="cert-image"
+                src="/images/certificate-image.PNG"
+                alt="Image with text 'Certificates'"
+                width="180px"
+                height="150px"
+              />
+            </div>
+            <div class="col-sm-12 col-md-8">
+              <div class="resume-entry">
+                <h3 class="content-heading">Course Certificates</h3>
+                <ul>
+                  <li>Oracle Certified Associate Programmer 1 (1Z0-803) (October 2015)</li>
+                  <li>Internet of Things (IoT) training (March 2019)</li>
+                  <li>German Language Certification (A1) (March 2019)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <hr />
         </div>
       </div>
     </div>
@@ -139,7 +168,7 @@
                 width="300px"
                 height="200px"
               />
-              <h4>
+              <h4 class="project-h4">
                 <span class="project-span" onclick="displayDesc1()">Handwritten digit recognition using MNIST dataset</span>
               </h4>
               <div class="project-description" id="project-id1">
@@ -161,7 +190,7 @@
                 width="300px"
                 height="200px"
               />
-              <h4>
+              <h4 class="project-h4">
                 <span class="project-span" onclick="displayDesc2()"
                   >Spambase data classification using Gaussian Naïve Bayes classifier</span
                 >
@@ -185,7 +214,7 @@
                 width="300px"
                 height="200px"
               />
-              <h4>
+              <h4 class="project-h4">
                 <span class="project-span" onclick="displayDesc3()"> Diabetes prediction model using Multilayer Perceptron</span>
               </h4>
               <div class="project-description" id="project-id3">
@@ -212,22 +241,22 @@
       <div class="container-fluid">
         <div class="form-container">
           <form class="my-4 mx-auto p-3 form-class">
-            <h3>Contact Me:</h3>
+            <h3 class="contact-h3">Contact Me:</h3>
             <div class="row mb-2 mt-4">
               <label for="name" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Name:</label>
               <div class="col">
-                <input type="text" class="form-control" id="name" required="required" />
+                <input type="text" class="form-control" id="name" required="required" placeholder="Enter your name" />
               </div>
             </div>
             <div class="row mb-2 mt-2">
               <label for="email" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Email:</label>
               <div class="col">
-                <input type="email" class="form-control" id="email" required="required" />
+                <input type="email" class="form-control" id="email" required="required" placeholder="Enter your email address" />
               </div>
             </div>
             <fieldset>
               <label for="message" class="col-sm-2 col-md-4 col-lg-4 col-form-label">Message:</label>
-              <div class="form-floating">
+              <div>
                 <textarea class="form-control" placeholder="Add your message here" id="message" required="required"></textarea>
               </div>
             </fieldset>
